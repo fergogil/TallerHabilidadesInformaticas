@@ -1,0 +1,93 @@
+/* ============================================
+   BASE.CSS
+   Variables institucionales, reset y tipografía
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Source+Sans+3:wght@400;600&display=swap');
+
+:root {
+  /* Colores institucionales */
+  --color-rojo: #E40613;
+  --color-rojo-oscuro: #A80410;
+  --color-texto: #1A1A1A;
+  --color-fondo: #FFFFFF;
+  --color-fondo-secundario: #F7F5F4;
+  --color-borde: #E0DDDC;
+
+  /* Tipografía */
+  --fuente-titulos: 'Montserrat', sans-serif;
+  --fuente-cuerpo: 'Source Sans 3', sans-serif;
+  --fuente-codigo: ui-monospace, 'Courier New', monospace;
+
+  /* Layout */
+  --ancho-contenido: 760px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--fuente-cuerpo);
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: var(--color-texto);
+  background: var(--color-fondo);
+}
+
+h1, h2, h3 {
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0 0 0.6em 0;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+
+p {
+  margin: 0 0 1em 0;
+}
+
+a {
+  color: var(--color-rojo);
+}
+
+a:hover {
+  color: var(--color-rojo-oscuro);
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+/* Utilidad de ancho de contenido, reutilizada por header/main/footer */
+.contenedor {
+  max-width: var(--ancho-contenido);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Visible focus para accesibilidad de teclado */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--color-rojo-oscuro);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    transition: none !important;
+  }
+}

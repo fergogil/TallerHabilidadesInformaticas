@@ -1,0 +1,40 @@
+<svg viewBox="0 0 950 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Los cinco bloques temáticos del curso, en secuencia">
+  <defs>
+    <marker id="flechaT" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 Z" fill="#E40613"/>
+    </marker>
+  </defs>
+
+  <g font-family="sans-serif" font-weight="700" font-size="15" fill="#1A1A1A">
+    <rect x="10" y="90" width="160" height="80" rx="8" fill="#E40613"/>
+    <text x="90" y="122" text-anchor="middle" fill="#fff" font-size="26">1</text>
+    <text x="90" y="150" text-anchor="middle" fill="#fff" font-size="13">Sistemas de</text>
+    <text x="90" y="167" text-anchor="middle" fill="#fff" font-size="13">Información</text>
+
+    <line x1="175" y1="130" x2="205" y2="130" stroke="#E40613" stroke-width="3" marker-end="url(#flechaT)"/>
+
+    <rect x="210" y="90" width="160" height="80" rx="8" fill="#F7F5F4" stroke="#E0DDDC" stroke-width="2"/>
+    <text x="290" y="122" text-anchor="middle" font-size="26">2</text>
+    <text x="290" y="158" text-anchor="middle" font-size="13">Algoritmia</text>
+
+    <line x1="375" y1="130" x2="405" y2="130" stroke="#E40613" stroke-width="3" marker-end="url(#flechaT)"/>
+
+    <rect x="410" y="90" width="160" height="80" rx="8" fill="#F7F5F4" stroke="#E0DDDC" stroke-width="2"/>
+    <text x="490" y="122" text-anchor="middle" font-size="26">3</text>
+    <text x="490" y="150" text-anchor="middle" font-size="13">Sociedad del</text>
+    <text x="490" y="167" text-anchor="middle" font-size="13">Conocimiento</text>
+
+    <line x1="575" y1="130" x2="605" y2="130" stroke="#E40613" stroke-width="3" marker-end="url(#flechaT)"/>
+
+    <rect x="610" y="90" width="160" height="80" rx="8" fill="#F7F5F4" stroke="#E0DDDC" stroke-width="2"/>
+    <text x="690" y="122" text-anchor="middle" font-size="26">4</text>
+    <text x="690" y="158" text-anchor="middle" font-size="13">Ofimática</text>
+
+    <line x1="775" y1="130" x2="805" y2="130" stroke="#E40613" stroke-width="3" marker-end="url(#flechaT)"/>
+
+    <rect x="810" y="90" width="130" height="80" rx="8" fill="#F7F5F4" stroke="#E0DDDC" stroke-width="2"/>
+    <text x="875" y="122" text-anchor="middle" font-size="26">5</text>
+    <text x="875" y="150" text-anchor="middle" font-size="12">Redes y</text>
+    <text x="875" y="166" text-anchor="middle" font-size="12">Web</text>
+  </g>
+</svg>

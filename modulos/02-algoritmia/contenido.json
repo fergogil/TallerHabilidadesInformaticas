@@ -1,0 +1,158 @@
+{
+  "modulo": "02-algoritmia",
+  "titulo": "Introducción a los Algoritmos",
+  "anterior": "01-fundamentos",
+  "siguiente": null,
+  "introduccion": "Ya sabemos qué es un sistema y cómo procesa información. Ahora vamos al corazón de la programación: cómo diseñar la lógica que resuelve un problema, paso a paso, antes de escribir una sola línea de código.",
+  "bloques": [
+    {
+      "id": "concepto-algoritmo",
+      "titulo": "¿Qué es un Algoritmo?",
+      "grafico": "algoritmo.svg",
+      "esencial": "Un algoritmo es un método para resolver un problema mediante una serie de pasos precisos, definidos y finitos.",
+      "profundizar": "Estas tres palabras importan: preciso (cada paso indica claramente el orden de realización), definido (siempre se obtiene la misma respuesta para las mismas entradas) y finito (tiene un número determinado de pasos y produce un resultado en tiempo finito). Un algoritmo que nunca termina, o que da resultados distintos con las mismas entradas, no cumple su función."
+    },
+    {
+      "id": "ejemplo-algoritmo-cine",
+      "titulo": "Un Algoritmo Cotidiano",
+      "esencial": "Ir al cine también es un algoritmo: elegir la película, comprar los boletos, pasar a la sala, ubicar el asiento, ver la película, volver a casa.",
+      "profundizar": "Fíjate que cumple las tres condiciones: es preciso (el orden importa, no puedes ver la película antes de comprar el boleto), definido (siempre terminas viendo una película) y finito (tiene un número determinado de pasos). Pensar en algoritmos cotidianos como este ayuda a entender que la lógica algorítmica no es exclusiva de la programación — la usas todos los días sin llamarla así."
+    },
+    {
+      "id": "fases-solucion-problemas",
+      "titulo": "Fases para la Solución de Problemas",
+      "grafico": "fases-solucion.svg",
+      "esencial": "Todo problema se resuelve en tres fases: Análisis (qué entradas se requieren, qué salida se desea, qué método la produce), Diseño del algoritmo (aplicando pseudocódigo, flujogramas o diagramas N-S), e Implementación (codificar, compilar, verificar y depurar).",
+      "profundizar": "Saltarse el análisis y el diseño para ir directo a escribir código es el error más común de quien empieza a programar — y también el que más tiempo hace perder, porque los errores de lógica se detectan tarde. Acostumbrarte a pasar primero por análisis y diseño, aunque sea en unas líneas de pseudocódigo, te ahorra horas de depuración después."
+    },
+    {
+      "id": "representacion-algoritmos",
+      "titulo": "Representación de Algoritmos",
+      "grafico": "representacion-algoritmo.svg",
+      "esencial": "Un mismo algoritmo se puede representar con un flujograma (diagrama visual con símbolos) o con pseudocódigo (texto estructurado, más cercano a un lenguaje de programación real).",
+      "profundizar": "En este curso usaremos principalmente pseudocódigo, porque se traduce de forma casi directa a LPP. El flujograma es más visual e intuitivo al principio, pero para programas más largos el pseudocódigo es más rápido de escribir y de mantener. Ambos representan exactamente la misma lógica — no son competidores, son dos formas de anotar lo mismo."
+    },
+    {
+      "id": "conceptos-basicos-datos",
+      "titulo": "Entradas, Salidas y Tipos de Datos",
+      "esencial": "Las entradas llegan por dispositivos como teclado, mouse o escáner. Las salidas se muestran en monitores o impresoras. Los tipos de datos más comunes son: Entero, Carácter, Cadena, Real, Fecha, Hora y Lógico.",
+      "profundizar": "El tipo de dato define qué valores puede tomar una variable y qué operaciones tienen sentido sobre ella. Por ejemplo, sumar dos números Enteros tiene sentido; \"sumar\" dos Cadenas de texto no (aunque algunos lenguajes lo interpretan como concatenación). Elegir el tipo correcto desde el diseño evita errores lógicos más adelante — es la misma idea de tipado estático que hace valiosa a LPP."
+    },
+    {
+      "id": "variables",
+      "titulo": "Variables",
+      "grafico": "variable.svg",
+      "esencial": "Una variable es un elemento que puede cambiar de valor durante la ejecución de un programa. Corresponde a una posición reservada en la memoria del computador.",
+      "profundizar": "Piensa en una variable como una caja con una etiqueta (el nombre) que guarda un valor. Puedes cambiar lo que hay adentro de la caja las veces que quieras durante el programa, pero la etiqueta (el nombre de la variable) no cambia. Esta es la diferencia clave con una constante, que veremos a continuación."
+    },
+    {
+      "id": "constantes-asignacion",
+      "titulo": "Constantes y Asignación",
+      "esencial": "Una constante es un valor que no puede alterarse durante la ejecución del programa. Asignación es la acción de dar valor a una variable o constante. Ejemplos: X ← 3; Pi ← 3.1416; a ← b / c.",
+      "profundizar": "El símbolo ← (flecha) es el operador de asignación en pseudocódigo — se lee \"recibe el valor de\", no \"es igual a\". Por ejemplo, X ← X + 1 no tiene sentido matemático (X nunca es igual a X+1), pero sí tiene sentido como asignación: \"X recibe su valor actual más uno\". Esta distinción es una de las primeras confusiones típicas al empezar a programar."
+    },
+    {
+      "id": "operandos-operadores",
+      "titulo": "Operandos y Operadores",
+      "esencial": "Operandos son constantes, variables, números u otras expresiones. Operadores son símbolos que indican qué operación ejecutar sobre ellos: aritméticos, lógicos, de cadena y relacionales.",
+      "profundizar": "En la expresión A + B, tanto A como B son operandos, y + es el operador. Esta terminología se usa igual en pseudocódigo, en LPP, y en cualquier lenguaje de programación — es universal, no cambia entre herramientas."
+    },
+    {
+      "id": "operadores-aritmeticos",
+      "titulo": "Operadores Aritméticos en Pseudocódigo",
+      "esencial": "+ suma · − resta · * multiplicación · ** potencia · / división real · div división entera · mod módulo (el resto de una división entera).",
+      "profundizar": "div y mod suelen ser los que más cuesta entender al principio: 17 div 5 da 3 (cuántas veces cabe 5 en 17, sin decimales), y 17 mod 5 da 2 (lo que sobra). Son operadores muy usados en programación para tareas como determinar si un número es par (n mod 2 = 0) o repartir elementos en grupos."
+    },
+    {
+      "id": "reglas-precedencia",
+      "titulo": "Reglas de Precedencia",
+      "esencial": "El orden en que se evalúa una expresión sigue reglas fijas: 1) paréntesis, 2) potencias, 3) multiplicación y división, 4) div y mod, 5) suma y resta.",
+      "profundizar": "Son básicamente las mismas reglas matemáticas que ya conoces (\"primero paréntesis, luego potencias...\"), aplicadas también a div y mod. Cuando tengas duda sobre el orden de evaluación de una expresión, usar paréntesis de más nunca está mal — hace el código más claro incluso si no es estrictamente necesario."
+    },
+    {
+      "id": "quiz-traduccion-expresiones",
+      "tipo": "quiz-opciones",
+      "titulo": "Practica: Expresiones Algebraicas a Pseudocódigo",
+      "esencial": "Elige el equivalente algorítmico correcto de cada expresión algebraica.",
+      "preguntas": [
+        {
+          "enunciado": "b² − 4ac",
+          "opciones": ["b^2 - 4*a*c", "b*2 - 4*a*c", "b^2 - 4*a + c"],
+          "correcta": 0
+        },
+        {
+          "enunciado": "x(y + z)",
+          "opciones": ["x*y + z", "x*(y + z)", "x + y*z"],
+          "correcta": 1
+        },
+        {
+          "enunciado": "1 / (x² + x + 3)",
+          "opciones": ["1 / x^2 + x + 3", "1 / (x^2 + x + 3)", "(1/x)^2 + x + 3"],
+          "correcta": 1
+        },
+        {
+          "enunciado": "(a + b) / (c − d)",
+          "opciones": ["a + b / c - d", "(a + b) / (c - d)", "a + (b/c) - d"],
+          "correcta": 1
+        }
+      ],
+      "profundizar": "Fíjate que los distractores de este ejercicio están construidos alrededor del error más común: olvidar los paréntesis y dejar que las reglas de precedencia cambien el resultado de la expresión. Si te equivocaste en alguna, revisa primero si el paréntesis del numerador o denominador se perdió en la traducción."
+    },
+    {
+      "id": "evaluacion-expresiones",
+      "tipo": "evaluacion-numerica",
+      "titulo": "Practica: Evalúa las Expresiones",
+      "valores": { "A": 5, "B": 25, "C": 10 },
+      "expresiones": [
+        { "enunciado": "X ← A + B + C", "respuesta": 40 },
+        { "enunciado": "X ← A + B * C", "respuesta": 255 },
+        { "enunciado": "X ← A + B / C", "respuesta": 7.5 },
+        { "enunciado": "X ← B div A + C", "respuesta": 15 },
+        { "enunciado": "X ← A + B mod C", "respuesta": 10 },
+        { "enunciado": "X ← (A + B) / C", "respuesta": 3 },
+        { "enunciado": "X ← A + (B / C)", "respuesta": 7.5 }
+      ],
+      "profundizar": "Si te equivocaste en alguna, aplica las reglas de precedencia paso a paso: primero resuelve lo que está entre paréntesis, luego potencias, luego * / div mod de izquierda a derecha, y al final + −. Por ejemplo, en B div A + C, primero se calcula B div A (25 div 5 = 5), y luego se suma C (5 + 10 = 15)."
+    },
+    {
+      "id": "funciones-internas",
+      "titulo": "Funciones Internas",
+      "esencial": "Son funciones matemáticas ya incorporadas al lenguaje, que no necesitas construir tú mismo: Abs, Arctan, Cos, Sen, Exp, Ln, Log10, Redondeo, Trunc, Cuadrado, Raíz, entre otras.",
+      "profundizar": "Estas funciones dependen del lenguaje — cada lenguaje de programación trae su propia librería matemática con nombres y comportamientos ligeramente distintos. Lo importante es que no tienes que reinventar cómo calcular una raíz cuadrada o un logaritmo: casi cualquier lenguaje (incluido LPP) ya te lo da resuelto."
+    },
+    {
+      "id": "ejercicio-area-rectangulo",
+      "tipo": "ejercicio",
+      "titulo": "Ejemplo Resuelto: Área de un Rectángulo",
+      "pasos": [
+        {
+          "etiqueta": "1. Análisis del problema",
+          "contenido": "Entradas: la base (b) y la altura (h) del rectángulo.<br>Salida: el área (a) del rectángulo.<br>Método: el área corresponde al producto de la base por la altura."
+        },
+        {
+          "etiqueta": "2. Diseño del algoritmo",
+          "codigo": "Programa AreaRectangulo\nEntero a, b, h\nInicio\n    Lea b\n    Lea h\n    a ← b * h\n    Escriba \"El área es: \", a\nFin"
+        },
+        {
+          "etiqueta": "3. Implementación",
+          "contenido": "Se implementa y ejecuta en LPP. El propio curso contempla también ver esta misma lógica corriendo como página web (JavaScript/HTML) — justamente la tecnología con la que está hecho este sitio."
+        }
+      ],
+      "profundizar": "Este patrón de tres pasos (Análisis → Diseño → Implementación) es el que vas a repetir en cada ejercicio del curso, y también es una buena costumbre para cualquier problema de programación que enfrentes en el futuro, sin importar el lenguaje."
+    },
+    {
+      "id": "ejemplo-circunferencia",
+      "titulo": "Practica Tú: Área y Perímetro de una Circunferencia",
+      "esencial": "Se pide desarrollar una solución que determine el área y el perímetro de una circunferencia. Diseña el algoritmo (análisis + diseño) y muestra su implementación en LPP. Opcionalmente, impleméntalo también en otro lenguaje.",
+      "profundizar": "Recuerda las fórmulas: área = π × r², perímetro = 2 × π × r. El valor de π puedes declararlo como una constante al inicio de tu programa. Sigue el mismo patrón de tres pasos del ejercicio anterior — inténtalo antes de ver la solución en clase."
+    },
+    {
+      "id": "taller-clase",
+      "titulo": "Taller en Clase",
+      "esencial": "En grupos de tres personas, presenten soluciones algorítmicas e implementaciones con LPP para: <br>• Dados dos números reales, calcular su suma, multiplicación y división.<br>• Determinar el área de un triángulo conociendo su base y altura.<br>• Calcular la velocidad de un cuerpo (distancia en km, tiempo en horas), mostrando el resultado en km/h y en m/s.<br>• Encontrar la solución positiva de una ecuación de segundo grado.",
+      "profundizar": null
+    }
+  ],
+  "ejercicio": null,
+  "quiz": null
+}

@@ -1,0 +1,28 @@
+<svg viewBox="0 0 700 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Distribución porcentual de la evaluación del curso">
+  <g font-family="sans-serif" font-size="16" fill="#1A1A1A">
+    <text x="0" y="24" font-weight="700">Examen parcial I</text>
+    <rect x="260" y="8" width="250" height="26" rx="4" fill="#F7F5F4" stroke="#E0DDDC"/>
+    <rect x="260" y="8" width="250" height="26" rx="4" fill="#E40613"/>
+    <text x="520" y="27" font-weight="700">25%</text>
+
+    <text x="0" y="66" font-weight="700">Examen parcial II</text>
+    <rect x="260" y="50" width="250" height="26" rx="4" fill="#F7F5F4" stroke="#E0DDDC"/>
+    <rect x="260" y="50" width="250" height="26" rx="4" fill="#E40613"/>
+    <text x="520" y="69" font-weight="700">25%</text>
+
+    <text x="0" y="108" font-weight="700">Talleres</text>
+    <rect x="260" y="92" width="200" height="26" rx="4" fill="#F7F5F4" stroke="#E0DDDC"/>
+    <rect x="260" y="92" width="200" height="26" rx="4" fill="#E40613"/>
+    <text x="470" y="111" font-weight="700">20%</text>
+
+    <text x="0" y="150" font-weight="700">Trabajo integrador</text>
+    <rect x="260" y="134" width="200" height="26" rx="4" fill="#F7F5F4" stroke="#E0DDDC"/>
+    <rect x="260" y="134" width="200" height="26" rx="4" fill="#E40613"/>
+    <text x="470" y="153" font-weight="700">20%</text>
+
+    <text x="0" y="192" font-weight="700">Exposición</text>
+    <rect x="260" y="176" width="100" height="26" rx="4" fill="#F7F5F4" stroke="#E0DDDC"/>
+    <rect x="260" y="176" width="100" height="26" rx="4" fill="#E40613"/>
+    <text x="370" y="195" font-weight="700">10%</text>
+  </g>
+</svg>

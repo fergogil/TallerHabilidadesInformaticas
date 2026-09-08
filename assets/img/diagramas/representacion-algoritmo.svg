@@ -1,0 +1,28 @@
+<svg viewBox="0 0 640 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Flujograma y pseudocódigo representando el mismo algoritmo de suma">
+  <g font-family="sans-serif" fill="#1A1A1A">
+    <text x="120" y="25" text-anchor="middle" font-weight="700" font-size="16">Flujograma</text>
+    <ellipse cx="120" cy="55" rx="45" ry="18" fill="#F7F5F4" stroke="#E0DDDC" stroke-width="2"/>
+    <text x="120" y="60" text-anchor="middle" font-size="13">Inicio</text>
+    <line x1="120" y1="73" x2="120" y2="95" stroke="#E40613" stroke-width="2"/>
+    <rect x="75" y="95" width="90" height="35" fill="#F7F5F4" stroke="#E0DDDC" stroke-width="2"/>
+    <text x="120" y="117" text-anchor="middle" font-size="13">Lea A, B</text>
+    <line x1="120" y1="130" x2="120" y2="152" stroke="#E40613" stroke-width="2"/>
+    <rect x="75" y="152" width="90" height="35" fill="#E40613"/>
+    <text x="120" y="174" text-anchor="middle" font-size="13" fill="#fff">S ← A+B</text>
+    <line x1="120" y1="187" x2="120" y2="209" stroke="#E40613" stroke-width="2"/>
+    <ellipse cx="120" cy="228" rx="45" ry="18" fill="#F7F5F4" stroke="#E0DDDC" stroke-width="2"/>
+    <text x="120" y="233" text-anchor="middle" font-size="13">Fin</text>
+
+    <line x1="230" y1="20" x2="230" y2="250" stroke="#E0DDDC" stroke-width="2"/>
+
+    <text x="430" y="25" text-anchor="middle" font-weight="700" font-size="16">Pseudocódigo</text>
+    <rect x="270" y="45" width="320" height="185" rx="6" fill="#F7F5F4" stroke="#E0DDDC" stroke-width="2"/>
+    <text x="290" y="75" font-family="ui-monospace, monospace" font-size="14">Programa Suma</text>
+    <text x="290" y="98" font-family="ui-monospace, monospace" font-size="14">Real A, B, S</text>
+    <text x="290" y="121" font-family="ui-monospace, monospace" font-size="14">Inicio</text>
+    <text x="305" y="144" font-family="ui-monospace, monospace" font-size="14">Lea(A)</text>
+    <text x="305" y="167" font-family="ui-monospace, monospace" font-size="14">Lea(B)</text>
+    <text x="305" y="190" font-family="ui-monospace, monospace" font-size="14">S ← A + B</text>
+    <text x="290" y="213" font-family="ui-monospace, monospace" font-size="14">Fin</text>
+  </g>
+</svg>

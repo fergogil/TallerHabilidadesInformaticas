@@ -1,0 +1,65 @@
+{
+  "modulo": "01-fundamentos",
+  "titulo": "Fundamentos de Sistemas",
+  "anterior": "00-presentacion",
+  "siguiente": "02-algoritmia",
+  "introduccion": "Antes de escribir el primer algoritmo, conviene entender el lenguaje común que usaremos todo el curso: qué es un sistema, qué es un dato y cómo una computadora convierte datos en información útil para la gestión de una organización.",
+  "bloques": [
+    {
+      "id": "concepto-sistema",
+      "titulo": "¿Qué es un Sistema?",
+      "grafico": "sistema.svg",
+      "esencial": "Un sistema es un conjunto de elementos relacionados entre sí que trabajan juntos para alcanzar un objetivo. Recibe datos, energía o materia como entrada, los procesa, y entrega información, energía o materia como salida.",
+      "profundizar": "Piensa en cualquier proceso de una empresa como un sistema: el proceso de facturación recibe datos de una venta (entrada), los procesa aplicando reglas del negocio, y entrega una factura (salida). Esta forma de pensar —entrada, proceso, salida— es la base de casi toda herramienta de gestión de información que usarás en tu carrera, incluido Excel."
+    },
+    {
+      "id": "concepto-dato-informacion",
+      "titulo": "Dato e Información: no son lo mismo",
+      "grafico": "dato-informacion.svg",
+      "esencial": "Un dato es una representación simbólica de un atributo o variable: un número, una palabra, una fecha. Información es un dato puesto en contexto, que aporta conocimiento útil para tomar una decisión.",
+      "profundizar": "Ejemplo aplicado a gestión: la cifra '4.500.000' es solo un dato. Pero \"el gasto total en nómina de agosto fue de $4.500.000, un 12% más que julio\" ya es información: tiene contexto y permite tomar una decisión. Distinguir dato de información es la habilidad central de cualquier profesional que trabaje con hojas de cálculo o sistemas contables."
+    },
+    {
+      "id": "concepto-sistemas-informacion",
+      "titulo": "Sistemas de Información",
+      "grafico": "sistemas-informacion.svg",
+      "esencial": "Un Sistema de Información (SI) es un conjunto organizado de elementos que apoya las actividades de una empresa. Se compone de cuatro tipos de elementos: personas, datos, actividades o técnicas de trabajo, y recursos (típicamente informáticos).",
+      "profundizar": "Un sistema de información no es únicamente el software. La nómina de una empresa es un sistema de información: incluye a las personas que la operan, los datos de los empleados, las actividades del proceso de pago, y los recursos (computadores, el programa de nómina) que lo hacen posible. Cuando en administración se habla de 'implementar un sistema', casi siempre se refiere a esta combinación completa, no solo a instalar un programa."
+    },
+    {
+      "id": "concepto-actividades-si",
+      "titulo": "Actividades Básicas de un SI",
+      "grafico": "actividades-si.svg",
+      "esencial": "Todo sistema de información realiza tres actividades básicas: recibe entradas, las procesa, y produce salidas. Además, necesita almacenamiento para guardar la información y poder reutilizarla.",
+      "profundizar": "Este patrón (entradas → procesamiento → salidas, con almacenamiento) se repite en cualquier herramienta que usarás: una hoja de Excel recibe datos en las celdas (entrada), aplica fórmulas (procesamiento), muestra resultados (salida), y guarda todo en el archivo (almacenamiento). Entender este patrón ahora te ayudará a comprender más rápido cualquier herramienta nueva en el futuro."
+    },
+    {
+      "id": "concepto-sistema-computo",
+      "titulo": "Sistema de Cómputo",
+      "grafico": "sistema-computo.svg",
+      "esencial": "Es un conjunto de elementos electrónicos (hardware) que procesan y almacenan información siguiendo instrucciones (software). El hardware son los componentes físicos; el software son los programas.",
+      "profundizar": "Dentro del software existen dos grandes tipos: software de sistema (como el sistema operativo, que hace que el computador funcione) y software aplicativo (como Excel, un programa de nómina, o un sistema de facturación, que resuelven una tarea específica del usuario). La mayoría de las herramientas que usarás en tu vida profesional son software aplicativo."
+    },
+    {
+      "id": "tipos-software",
+      "titulo": "Tipos de Software",
+      "esencial": "Software de sistema: hace que el computador funcione (controladores, sistemas operativos, utilitarios). Software aplicativo: resuelve una tarea específica del usuario, como nóminas o facturación.",
+      "profundizar": "Cuando instalas Windows o macOS, eso es software de sistema — trabaja en segundo plano para que todo lo demás funcione. Cuando abres Excel, Word, o un sistema contable, eso es software aplicativo — es la herramienta con la que realmente haces tu trabajo. Casi todo lo que usarás como profesional de gestión es software aplicativo."
+    },
+    {
+      "id": "elementos-basicos",
+      "titulo": "Elementos Básicos",
+      "esencial": "Software: los programas, incluyendo procedimientos, utilidades y sistemas operativos. Hardware: los elementos físicos de una computadora. Programador: la persona que crea software. Lenguaje de programación: el conjunto de instrucciones y reglas que permite crear software.",
+      "profundizar": "Estos cuatro términos son el vocabulario mínimo para entender cualquier conversación técnica en tu vida profesional. Cuando alguien dice 'hay que programar esto', se refiere a que un programador use un lenguaje de programación para crear software que corra sobre determinado hardware."
+    },
+    {
+      "id": "concepto-lenguajes-programacion",
+      "titulo": "¿Qué es un Lenguaje de Programación?",
+      "grafico": "lenguajes-programacion.svg",
+      "esencial": "Conjunto de instrucciones, órdenes y reglas que permite crear software. Existen muchos lenguajes (C, Java, Python, JavaScript, entre otros); en este curso usaremos pseudocódigo y la herramienta LPP para aprender la lógica antes que la sintaxis de un lenguaje específico.",
+      "profundizar": "No necesitas memorizar la lista de lenguajes de programación que existen. Lo importante es entender que todos comparten la misma lógica de fondo (variables, condiciones, repeticiones), solo cambia la sintaxis con la que se escriben. Por eso este curso empieza con pseudocódigo: una vez entiendes la lógica, aprender la sintaxis de un lenguaje puntual es mucho más rápido — es una habilidad transferible a cualquier herramienta que uses en tu carrera, incluyendo las fórmulas de Excel."
+    }
+  ],
+  "ejercicio": null,
+  "quiz": null
+}
