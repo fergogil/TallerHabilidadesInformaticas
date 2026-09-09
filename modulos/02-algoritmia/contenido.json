@@ -2,7 +2,7 @@
   "modulo": "02-algoritmia",
   "titulo": "Introducción a los Algoritmos",
   "anterior": "01-fundamentos",
-  "siguiente": null,
+  "siguiente": "03-controles-flujo",
   "introduccion": "Ya sabemos qué es un sistema y cómo procesa información. Ahora vamos al corazón de la programación: cómo diseñar la lógica que resuelve un problema, paso a paso, antes de escribir una sola línea de código.",
   "bloques": [
     {
@@ -15,14 +15,14 @@
     {
       "id": "ejemplo-algoritmo-cine",
       "titulo": "Un Algoritmo Cotidiano",
-      "esencial": "Ir al cine también es un algoritmo: elegir la película, comprar los boletos, pasar a la sala, ubicar el asiento, ver la película, volver a casa.",
-      "profundizar": "Fíjate que cumple las tres condiciones: es preciso (el orden importa, no puedes ver la película antes de comprar el boleto), definido (siempre terminas viendo una película) y finito (tiene un número determinado de pasos). Pensar en algoritmos cotidianos como este ayuda a entender que la lógica algorítmica no es exclusiva de la programación — la usas todos los días sin llamarla así."
+      "esencial": "Ir al cine también es un algoritmo, con más pasos de los que parece a simple vista:<br>1. Elegir la película en la cartelera.<br>2. Verificar el horario disponible.<br>3. Comprar el boleto (en taquilla o en línea).<br>4. Presentar el boleto en la entrada.<br>5. Ubicar la sala y el asiento asignado.<br>6. Ver la película completa.<br>7. Salir de la sala y volver a casa.",
+      "profundizar": "Fíjate que cada paso depende del anterior — no puedes ubicar tu asiento antes de comprar el boleto, ni ver la película antes de entrar a la sala. Eso es lo que significa que un algoritmo sea preciso: el orden importa. También es definido, porque siempre terminas viendo una película sin importar cuántas veces repitas el proceso, y finito, porque tiene un número determinado de pasos y termina en un tiempo razonable. Pensar en algoritmos cotidianos como este ayuda a entender que la lógica algorítmica no es exclusiva de la programación — la usas todos los días sin llamarla así."
     },
     {
       "id": "fases-solucion-problemas",
       "titulo": "Fases para la Solución de Problemas",
       "grafico": "fases-solucion.svg",
-      "esencial": "Todo problema se resuelve en tres fases: Análisis (qué entradas se requieren, qué salida se desea, qué método la produce), Diseño del algoritmo (aplicando pseudocódigo, flujogramas o diagramas N-S), e Implementación (codificar, compilar, verificar y depurar).",
+      "esencial": "<strong>• Análisis:</strong> ¿qué entradas se requieren?, ¿qué salida se desea?, ¿qué método la produce? <br><strong>• Diseño del algoritmo:</strong> aplicando pseudocódigo, flujogramas o diagramas N-S.<br><strong>• Implementación:</strong> codificar, compilar y depurar.",
       "profundizar": "Saltarse el análisis y el diseño para ir directo a escribir código es el error más común de quien empieza a programar — y también el que más tiempo hace perder, porque los errores de lógica se detectan tarde. Acostumbrarte a pasar primero por análisis y diseño, aunque sea en unas líneas de pseudocódigo, te ahorra horas de depuración después."
     },
     {
@@ -35,7 +35,7 @@
     {
       "id": "conceptos-basicos-datos",
       "titulo": "Entradas, Salidas y Tipos de Datos",
-      "esencial": "Las entradas llegan por dispositivos como teclado, mouse o escáner. Las salidas se muestran en monitores o impresoras. Los tipos de datos más comunes son: Entero, Carácter, Cadena, Real, Fecha, Hora y Lógico.",
+      "esencial": "<br><strong>Las entradas</strong> llegan por dispositivos como teclado, mouse o escáner. <br><strong>Las salidas</strong> se muestran en monitores o impresoras. <br><strong>Los tipos de datos</strong> más comunes son: Entero, Carácter, Cadena, Real, Fecha, Hora y Lógico.",
       "profundizar": "El tipo de dato define qué valores puede tomar una variable y qué operaciones tienen sentido sobre ella. Por ejemplo, sumar dos números Enteros tiene sentido; \"sumar\" dos Cadenas de texto no (aunque algunos lenguajes lo interpretan como concatenación). Elegir el tipo correcto desde el diseño evita errores lógicos más adelante — es la misma idea de tipado estático que hace valiosa a LPP."
     },
     {
@@ -60,19 +60,19 @@
     {
       "id": "operadores-aritmeticos",
       "titulo": "Operadores Aritméticos en Pseudocódigo",
-      "esencial": "+ suma · − resta · * multiplicación · ** potencia · / división real · div división entera · mod módulo (el resto de una división entera).",
+      "esencial": "<b>+ </b>: Suma  <br><b>− </b>: Resta <br><b>* </b>: Multiplicación <br><b>^, ** </b>: Potencia <br><b>/ </b>: División real <br><b>DIV </b>: División entera <br><b>MOD </b>: Módulo (el resto de una división entera).",
       "profundizar": "div y mod suelen ser los que más cuesta entender al principio: 17 div 5 da 3 (cuántas veces cabe 5 en 17, sin decimales), y 17 mod 5 da 2 (lo que sobra). Son operadores muy usados en programación para tareas como determinar si un número es par (n mod 2 = 0) o repartir elementos en grupos."
     },
     {
       "id": "reglas-precedencia",
       "titulo": "Reglas de Precedencia",
-      "esencial": "El orden en que se evalúa una expresión sigue reglas fijas: 1) paréntesis, 2) potencias, 3) multiplicación y división, 4) div y mod, 5) suma y resta.",
+      "esencial": "El orden de evaluación de expresiones sigue reglas fijas: <br>1) Paréntesis <br>2) Potencias <br>3) Multiplicación y división <br>4) DIV y MOD, <br>5) Suma y resta",
       "profundizar": "Son básicamente las mismas reglas matemáticas que ya conoces (\"primero paréntesis, luego potencias...\"), aplicadas también a div y mod. Cuando tengas duda sobre el orden de evaluación de una expresión, usar paréntesis de más nunca está mal — hace el código más claro incluso si no es estrictamente necesario."
     },
     {
       "id": "quiz-traduccion-expresiones",
       "tipo": "quiz-opciones",
-      "titulo": "Practica: Expresiones Algebraicas a Pseudocódigo",
+      "titulo": "Práctica: Expresiones Algebraicas a Pseudocódigo",
       "esencial": "Elige el equivalente algorítmico correcto de cada expresión algebraica.",
       "preguntas": [
         {

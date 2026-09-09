@@ -5,40 +5,84 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Taller de Habilidades Informáticas para la Gestión</title>
   <link rel="stylesheet" href="assets/css/base.css">
-  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/portada.css">
 </head>
 <body>
 
-  <header class="header-institucional">
-    <div class="contenedor">
-      <img class="logo" src="assets/img/logoUV_Oficial_Rojo.jpg" alt="Universidad del Valle">
-      <span class="nombre-curso">Taller de Habilidades Informáticas para la Gestión</span>
-    </div>
-  </header>
+  <section class="hero">
+    <div class="hero-fondo" aria-hidden="true">
+      <img class="marca-agua" src="assets/img/logoUV_transparente.png" alt="">
 
-  <main>
-    <div class="contenedor">
-      <h1>Contenido del curso</h1>
-      <p class="introduccion">
-        Sede Cartago · Facultad de Ciencias de la Administración.
-        Selecciona un módulo para empezar.
-      </p>
+      <svg class="forma forma-codigo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <text x="0" y="140" font-family="ui-monospace, monospace" font-weight="700" font-size="150" fill="currentColor">&lt;/&gt;</text>
+      </svg>
 
-      <ul style="list-style:none; padding:0; font-size:1.2rem;">
-        <li style="margin-bottom:0.75rem;">
-          <a href="modulos/00-presentacion/index.html">0. Presentación del Curso</a>
-        </li>
-        <li style="margin-bottom:0.75rem;">
-          <a href="modulos/01-fundamentos/index.html">1. Fundamentos de Sistemas</a>
-        </li>
-        <li style="margin-bottom:0.75rem;">
-          <a href="modulos/02-algoritmia/index.html">2. Introducción a los Algoritmos</a>
-        </li>
-        <!-- Los próximos módulos (algoritmia, operadores, ejemplo resuelto...)
-             se agregan aquí como nuevos <li> a medida que se construyen -->
-      </ul>
+      <svg class="forma forma-hoja" viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+        <rect x="5" y="5" width="190" height="150" rx="6" fill="none" stroke="currentColor" stroke-width="6"/>
+        <line x1="5" y1="45" x2="195" y2="45" stroke="currentColor" stroke-width="5"/>
+        <line x1="5" y1="85" x2="195" y2="85" stroke="currentColor" stroke-width="5"/>
+        <line x1="5" y1="125" x2="195" y2="125" stroke="currentColor" stroke-width="5"/>
+        <line x1="70" y1="5" x2="70" y2="155" stroke="currentColor" stroke-width="5"/>
+        <line x1="135" y1="5" x2="135" y2="155" stroke="currentColor" stroke-width="5"/>
+      </svg>
+
+      <svg class="forma forma-datos" viewBox="0 0 200 160" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="90" width="30" height="70" fill="currentColor"/>
+        <rect x="55" y="50" width="30" height="110" fill="currentColor"/>
+        <rect x="100" y="70" width="30" height="90" fill="currentColor"/>
+        <rect x="145" y="20" width="30" height="140" fill="currentColor"/>
+      </svg>
+
+      <svg class="forma forma-ciudad" viewBox="0 0 400 180" xmlns="http://www.w3.org/2000/svg">
+        <rect x="10" y="70" width="40" height="110" fill="currentColor"/>
+        <rect x="60" y="40" width="40" height="140" fill="currentColor"/>
+        <rect x="110" y="90" width="40" height="90" fill="currentColor"/>
+        <rect x="160" y="20" width="40" height="160" fill="currentColor"/>
+        <rect x="210" y="60" width="40" height="120" fill="currentColor"/>
+        <rect x="260" y="100" width="40" height="80" fill="currentColor"/>
+        <circle cx="30" cy="30" r="6" fill="currentColor"/>
+        <circle cx="130" cy="15" r="6" fill="currentColor"/>
+        <circle cx="230" cy="30" r="6" fill="currentColor"/>
+        <line x1="30" y1="30" x2="130" y2="15" stroke="currentColor" stroke-width="2"/>
+        <line x1="130" y1="15" x2="230" y2="30" stroke="currentColor" stroke-width="2"/>
+      </svg>
     </div>
-  </main>
+
+    <a class="enlace-herramientas" href="herramientas/index.html">Herramientas &rarr;</a>
+    <div class="hero-contenido">
+      <img class="logo-inicio" src="assets/img/logoUV_Oficial_Rojo.jpg" alt="Universidad del Valle">
+      <h1>Taller de Habilidades Informáticas para la Gestión</h1>
+      <p class="subtitulo">Sistemas, algoritmia, ofimática y web — pensado para quien empieza desde cero.</p>
+      <p class="institucion">Universidad del Valle · Sede Cartago · Facultad de Ciencias de la Administración</p>
+    </div>
+  </section>
+
+  <section class="modulos-seccion">
+    <h2>Contenido del curso</h2>
+    <div class="rejilla-modulos">
+      <a class="tarjeta-modulo" href="modulos/00-presentacion/index.html">
+        <span class="numero-modulo">0</span>
+        <h3>Presentación del Curso</h3>
+        <p>Justificación, objetivos, temario y evaluación.</p>
+      </a>
+      <a class="tarjeta-modulo" href="modulos/01-fundamentos/index.html">
+        <span class="numero-modulo">1</span>
+        <h3>Fundamentos de Sistemas</h3>
+        <p>Sistemas, información, cómputo y software.</p>
+      </a>
+      <a class="tarjeta-modulo" href="modulos/02-algoritmia/index.html">
+        <span class="numero-modulo">2</span>
+        <h3>Introducción a los Algoritmos</h3>
+        <p>Lógica, variables, operadores y tus primeros ejercicios.</p>
+      </a>
+      <a class="tarjeta-modulo" href="modulos/03-controles-flujo/index.html">
+        <span class="numero-modulo">3</span>
+        <h3>Controles de Flujo</h3>
+        <p>Condicionales, operadores lógicos y relacionales, y tus primeras decisiones en código.</p>
+      </a>
+      <!-- Los próximos módulos se agregan aquí como nuevas tarjetas -->
+    </div>
+  </section>
 
   <footer class="footer-institucional">
     <div class="contenedor">

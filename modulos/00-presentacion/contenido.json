@@ -3,39 +3,39 @@
   "titulo": "Presentación del Curso",
   "anterior": null,
   "siguiente": "01-fundamentos",
-  "introduccion": "Antes de empezar, conozcamos el curso: qué buscamos lograr, cómo se organiza y cómo se evalúa. Este taller te acompañará a desarrollar habilidades informáticas útiles para cualquier profesión ligada a la gestión.",
+  "introduccion": "Antes de empezar, conozcamos el curso: qué buscamos lograr, cómo se organiza y cómo se evalúa. Este curso te acompañará en el desarrollo de habilidades informáticas útiles para cualquier profesión ligada a la gestión.",
   "bloques": [
     {
       "id": "ficha-tecnica",
-      "titulo": "Taller de Habilidades Informáticas para la Gestión",
+      "titulo": "Taller de Habilidades Informáticas <br>para la Gestión",
       "esencial": "Curso de 3 créditos (código 801044C) de la Facultad de Ciencias de la Administración, Universidad del Valle, sede Cartago. Dirigido a los programas de Contaduría Pública, Administración de Empresas y afines.",
-      "profundizar": "Docente: Fernando González Gil (fernando.gonzalez.gil@correounivalle.edu.co). Horario de atención: lunes de 6:30 p.m. a 9:30 p.m. El curso combina 3 horas semanales de trabajo presencial con 6 horas de trabajo independiente del estudiante."
+      "profundizar": "Docente: Fernando González Gil (fernando.gonzalez.gil@correounivalle.edu.co). <br>Horario de atención: lunes de 6:30 p.m. a 9:30 p.m. <br>El curso combina 3 horas semanales de trabajo presencial con 6 horas de trabajo independiente del estudiante."
     },
     {
       "id": "justificacion",
       "titulo": "¿Por qué este curso?",
       "esencial": "Buscamos que desarrolles habilidades informáticas que te permitan resolver problemas de gestión de la información: almacenar, organizar, analizar y transformar datos, para que la información resultante sea útil y confiable en cualquier organización.",
-      "profundizar": "Cuatro conceptos atraviesan todo el curso: la sociedad del conocimiento (cómo la información cambió la forma en que operan las organizaciones), el razonamiento lógico (la base de la algoritmia), las Tecnologías de la Información y la Comunicación (TIC), y la gestión de la información aplicada. No necesitas ser programador para necesitar estas habilidades — hoy son parte básica de cualquier perfil de gestión."
+      "profundizar": "Cuatro conceptos atraviesan todo el curso: <br>• La sociedad del conocimiento (cómo la información cambió la forma en que operan las organizaciones).<br>• El razonamiento lógico (la base de la algoritmia).<br>• Las Tecnologías de la Información y la Comunicación (TIC). <br>• La gestión de la información aplicada. <br>No necesitas ser programador para demandar estas habilidades, hoy son parte básica de cualquier perfil de gestión."
     },
     {
       "id": "objetivos",
-      "titulo": "¿Qué vas a poder hacer al terminar?",
+      "titulo": "¿Qué podrás hacer al terminar?",
       "esencial": "Reconocer cómo funciona la sociedad de la información, plantear soluciones sencillas con algoritmia y programación básica, construir una página web simple, y gestionar información con herramientas como Excel.",
-      "profundizar": "En términos formales, estos son los cuatro resultados de aprendizaje (RA) del curso: RA1 — reconocer el concepto de sociedad de la información y del conocimiento. RA2 — relacionar algoritmia y programación básica con la gestión de información organizacional. RA3 — diseñar sitios web básicos para vitrinas comerciales conectadas a redes sociales. RA4 — gestionar información con herramientas informáticas en contextos organizacionales."
+      "profundizar": "En términos formales, estos son los cuatro resultados de aprendizaje (RA) del curso: <br>• RA1 — Reconocer el concepto de sociedad de la información y del conocimiento. <br>• RA2 — Relacionar algoritmia y programación básica con la gestión de información organizacional. <br>• RA3 — Diseñar sitios web básicos para vitrinas comerciales conectadas a redes sociales. <br>• RA4 — Gestionar información con herramientas informáticas en contextos organizacionales."
     },
     {
       "id": "temario",
-      "titulo": "Cómo se organiza el curso",
+      "titulo": "¿Cómo se organiza el curso?",
       "grafico": "temario-bloques.svg",
-      "esencial": "El curso avanza en cinco bloques temáticos: primero los fundamentos de sistemas de información, luego algoritmia (la base de la lógica de programación), sociedad del conocimiento, ofimática (Word y Excel), y finalmente redes, Internet y páginas web.",
-      "profundizar": "Este sitio se irá construyendo en ese mismo orden. Los bloques de Algoritmia y Sistemas de Información son los que tienen el tratamiento más interactivo (diapositivas, diagramas, ejercicios paso a paso), porque son la base lógica de todo lo demás. Sociedad del Conocimiento se trabaja principalmente mediante exposiciones grupales guiadas por el profesor, así que su presencia en el sitio será más ligera."
+      "esencial": "El curso avanza en cinco bloques temáticos: primero los fundamentos de sistemas de información, luego algoritmia (la base de la lógica de programación), sociedad del conocimiento, ofimática (Excel), y finalmente redes, Internet y páginas web.",
+      "profundizar": "Los bloques de Algoritmia y Sistemas de Información son los que tienen el tratamiento más interactivo (diapositivas, diagramas, ejercicios paso a paso), porque son la base lógica de todo lo demás. Sociedad del Conocimiento se trabaja principalmente mediante exposiciones grupales guiadas por el profesor."
     },
     {
       "id": "evaluacion",
       "titulo": "¿Cómo se evalúa el curso?",
       "grafico": "evaluacion.svg",
-      "esencial": "La nota final combina dos exámenes parciales (25% cada uno), los talleres realizados durante el semestre (20%), una exposición grupal (10%), y un trabajo integrador final (20%).",
-      "profundizar": "La evaluación combina un componente formativo continuo (talleres y actividades a lo largo del semestre, que dan retroalimentación constante) con una evaluación sumativa final. También se tienen en cuenta la asistencia regular, la participación en clase, y el proceso de autoevaluación del propio estudiante."
+      "esencial": "La nota final combina dos exámenes parciales (20% cada uno), los talleres realizados durante el semestre (20%), una exposición grupal (15%), y un trabajo integrador final (25%).",
+      "profundizar": "La evaluación combina un componente formativo continuo (talleres y actividades a lo largo del semestre, que dan retroalimentación constante) con una evaluación sumativa final."
     },
     {
       "id": "bibliografia",

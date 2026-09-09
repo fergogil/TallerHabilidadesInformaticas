@@ -1,0 +1,27 @@
+<svg viewBox="0 0 260 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagrama de flujo secuencial: inicio, acción 1, acción 2, acción N, fin">
+  <defs>
+    <marker id="flechaS" markerWidth="9" markerHeight="9" refX="4.5" refY="7" orient="auto">
+      <path d="M0,0 L9,0 L4.5,9 Z" fill="#E40613"/>
+    </marker>
+  </defs>
+  <g font-family="sans-serif" font-weight="700" font-size="16" fill="#fff" text-anchor="middle">
+    <rect x="40" y="10" width="180" height="45" rx="22" fill="#E40613"/>
+    <text x="130" y="38">INICIO</text>
+    <line x1="130" y1="55" x2="130" y2="90" stroke="#E40613" stroke-width="3" marker-end="url(#flechaS)"/>
+
+    <rect x="40" y="95" width="180" height="45" rx="6" fill="#F7F5F4" stroke="#E0DDDC" stroke-width="2"/>
+    <text x="130" y="123" fill="#1A1A1A">Acción 1</text>
+    <line x1="130" y1="140" x2="130" y2="175" stroke="#E40613" stroke-width="3" marker-end="url(#flechaS)"/>
+
+    <rect x="40" y="180" width="180" height="45" rx="6" fill="#F7F5F4" stroke="#E0DDDC" stroke-width="2"/>
+    <text x="130" y="208" fill="#1A1A1A">Acción 2</text>
+    <line x1="130" y1="225" x2="130" y2="260" stroke="#E40613" stroke-width="3" marker-end="url(#flechaS)"/>
+
+    <rect x="40" y="265" width="180" height="45" rx="6" fill="#F7F5F4" stroke="#E0DDDC" stroke-width="2"/>
+    <text x="130" y="293" fill="#1A1A1A">Acción N</text>
+    <line x1="130" y1="310" x2="130" y2="345" stroke="#E40613" stroke-width="3" marker-end="url(#flechaS)"/>
+
+    <rect x="40" y="350" width="180" height="45" rx="22" fill="#E40613"/>
+    <text x="130" y="378">FIN</text>
+  </g>
+</svg>

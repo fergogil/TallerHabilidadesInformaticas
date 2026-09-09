@@ -63,6 +63,7 @@ function crearDiapositivaConceptual(bloque) {
     <h2>${bloque.titulo}</h2>
     ${bloque.grafico ? `<img class="grafico" src="../../assets/img/diagramas/${bloque.grafico}" alt="">` : ''}
     <p class="esencial">${bloque.esencial}</p>
+    ${bloque.codigo ? `<pre class="codigo">${escaparHtml(bloque.codigo)}</pre>` : ''}
   `;
   div.innerHTML = aplicarProfundizar(div, bloque, html);
   return div;

@@ -1,0 +1,220 @@
+/* ============================================
+   PORTADA.CSS
+   Estilo exclusivo de la página de inicio (index.html).
+   Deliberadamente más expresivo que diapositivas.css —
+   la portada es la carta de presentación del sitio;
+   el contenido interno prioriza legibilidad para proyección.
+   No se carga en ninguna página de módulo.
+   ============================================ */
+
+body {
+  margin: 0;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #17181A 0%, #3A0509 55%, #7A0912 100%);
+  color: #fff;
+  padding: 2.25rem 1.5rem 2.75rem 1.5rem;
+}
+
+.hero-fondo {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+/* Marca de agua institucional: nítida, muy transparente, sin difuminar */
+.marca-agua {
+  position: absolute;
+  right: -8%;
+  bottom: -12%;
+  width: 55vw;
+  max-width: 620px;
+  opacity: 0.07;
+}
+
+/* Formas temáticas difuminadas: programación, hoja de cálculo, datos, ciudad inteligente */
+.forma {
+  position: absolute;
+  filter: blur(18px);
+  opacity: 0.35;
+}
+
+.forma-codigo {
+  top: -60px;
+  left: -40px;
+  width: 340px;
+  color: #E40613;
+}
+
+.forma-hoja {
+  top: 8%;
+  right: 6%;
+  width: 260px;
+  color: #ffffff;
+  opacity: 0.18;
+}
+
+.forma-datos {
+  bottom: -40px;
+  left: 8%;
+  width: 300px;
+  color: #ffffff;
+  opacity: 0.2;
+}
+
+.forma-ciudad {
+  bottom: -20px;
+  right: -60px;
+  width: 420px;
+  color: #E40613;
+  opacity: 0.28;
+}
+
+.hero-contenido {
+  position: relative;
+  z-index: 1;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-contenido .logo-inicio {
+  height: 60px;
+  margin-bottom: 1.5rem;
+  background: #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+
+.hero-contenido h1 {
+  font-family: var(--fuente-titulos);
+  font-weight: 800;
+  font-size: clamp(2.2rem, 3vw + 1.5rem, 3.6rem);
+  margin: 0 0 0.75rem 0;
+  line-height: 1.15;
+}
+
+.hero-contenido .subtitulo {
+  font-size: clamp(1.1rem, 1vw + 0.9rem, 1.4rem);
+  color: #F0DADA;
+  margin: 0;
+}
+
+.hero-contenido .institucion {
+  margin-top: 1.75rem;
+  font-size: 0.95rem;
+  color: #D9B9BA;
+  letter-spacing: 0.02em;
+}
+
+.enlace-herramientas {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.75rem;
+  z-index: 2;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border: 1px solid rgba(255,255,255,0.4);
+  border-radius: 20px;
+  padding: 0.4rem 1rem;
+}
+
+.enlace-herramientas:hover {
+  border-color: #fff;
+  background: rgba(255,255,255,0.1);
+}
+
+/* ---------- Listado de módulos ---------- */
+.modulos-seccion {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem 2.5rem 1.5rem;
+}
+
+.modulos-seccion h2 {
+  font-family: var(--fuente-titulos);
+  font-size: 1.5rem;
+  color: var(--color-texto);
+  margin-bottom: 1.5rem;
+}
+
+.rejilla-modulos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 1rem;
+}
+
+.tarjeta-modulo {
+  display: block;
+  text-decoration: none;
+  color: var(--color-texto);
+  background: #fff;
+  border: 1px solid var(--color-borde);
+  border-radius: 10px;
+  padding: 1.25rem;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.tarjeta-modulo:hover {
+  border-color: var(--color-rojo);
+  transform: translateY(-3px);
+}
+
+.tarjeta-modulo .numero-modulo {
+  display: inline-block;
+  background: var(--color-rojo);
+  color: #fff;
+  font-family: var(--fuente-titulos);
+  font-weight: 700;
+  font-size: 0.85rem;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  border-radius: 50%;
+  margin-bottom: 0.75rem;
+}
+
+.tarjeta-modulo h3 {
+  font-family: var(--fuente-titulos);
+  font-size: 1.2rem;
+  margin: 0 0 0.5rem 0;
+  color: var(--color-texto);
+}
+
+.tarjeta-modulo p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0;
+}
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 2.5rem 1.25rem 3rem 1.25rem;
+  }
+  .marca-agua {
+    width: 80vw;
+  }
+  .enlace-herramientas {
+    top: 1rem;
+    right: 1rem;
+    font-size: 0.85rem;
+    padding: 0.3rem 0.8rem;
+  }
+}
+
+/* ---------- Footer institucional (propio de la portada) ---------- */
+.footer-institucional {
+  background: var(--color-rojo);
+  color: #fff;
+  padding: 1.5rem 0;
+  font-size: 0.95rem;
+  text-align: center;
+}

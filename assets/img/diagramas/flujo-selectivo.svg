@@ -1,0 +1,30 @@
+<svg viewBox="0 0 480 320" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagrama de flujo selectivo: una condición decide entre dos instrucciones">
+  <defs>
+    <marker id="flechaSel" markerWidth="9" markerHeight="9" refX="4.5" refY="7" orient="auto">
+      <path d="M0,0 L9,0 L4.5,9 Z" fill="#E40613"/>
+    </marker>
+  </defs>
+  <g font-family="sans-serif" font-weight="700" font-size="15">
+    <polygon points="240,15 340,80 240,145 140,80" fill="#E40613"/>
+    <text x="240" y="85" text-anchor="middle" fill="#fff">CONDICIÓN</text>
+
+    <line x1="140" y1="80" x2="70" y2="80" stroke="#E40613" stroke-width="3" marker-end="url(#flechaSel)"/>
+    <text x="105" y="70" text-anchor="middle" font-size="13" fill="#1A1A1A">F</text>
+    <line x1="340" y1="80" x2="410" y2="80" stroke="#E40613" stroke-width="3" marker-end="url(#flechaSel)"/>
+    <text x="375" y="70" text-anchor="middle" font-size="13" fill="#1A1A1A">V</text>
+
+    <line x1="70" y1="80" x2="70" y2="180" stroke="#E40613" stroke-width="3"/>
+    <line x1="410" y1="80" x2="410" y2="180" stroke="#E40613" stroke-width="3"/>
+
+    <rect x="15" y="180" width="110" height="50" rx="6" fill="#F7F5F4" stroke="#E0DDDC" stroke-width="2"/>
+    <text x="70" y="210" text-anchor="middle" font-size="13" fill="#1A1A1A">Instrucción 1</text>
+
+    <rect x="355" y="180" width="110" height="50" rx="6" fill="#F7F5F4" stroke="#E0DDDC" stroke-width="2"/>
+    <text x="410" y="210" text-anchor="middle" font-size="13" fill="#1A1A1A">Instrucción 2</text>
+
+    <line x1="70" y1="230" x2="70" y2="270" stroke="#E40613" stroke-width="3"/>
+    <line x1="410" y1="230" x2="410" y2="270" stroke="#E40613" stroke-width="3"/>
+    <line x1="70" y1="270" x2="410" y2="270" stroke="#E40613" stroke-width="3"/>
+    <circle cx="240" cy="270" r="14" fill="#F7F5F4" stroke="#E40613" stroke-width="3"/>
+  </g>
+</svg>

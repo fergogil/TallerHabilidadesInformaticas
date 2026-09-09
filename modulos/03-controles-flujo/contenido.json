@@ -1,0 +1,104 @@
+{
+  "modulo": "03-controles-flujo",
+  "titulo": "Controles de Flujo",
+  "anterior": "02-algoritmia",
+  "siguiente": null,
+  "introduccion": "Hasta ahora nuestros algoritmos ejecutan instrucciones una tras otra, sin excepción. En este módulo aprenderás a tomar decisiones dentro de un algoritmo y a repetir acciones — la base de cualquier programa realmente útil.",
+  "bloques": [
+    {
+      "id": "control-flujo",
+      "titulo": "Control de Flujo",
+      "esencial": "El control de flujo se refiere al orden en que se ejecutan las instrucciones de un programa. Los flujos pueden ser: secuenciales, alternativos, selectivos y repetitivos.",
+      "profundizar": "Hasta el módulo anterior, todos nuestros ejemplos fueron flujo secuencial puro — una instrucción después de otra, sin desviarse. Lo que viene en este módulo es aprender a romper esa secuencia de forma controlada: decidir qué hacer según una condición, o repetir un bloque de instrucciones varias veces."
+    },
+    {
+      "id": "flujos-secuenciales",
+      "titulo": "Flujos Secuenciales",
+      "grafico": "flujo-secuencial.svg",
+      "esencial": "Se refiere a la ejecución de instrucciones una tras otra, de una línea a la siguiente, sin saltarse ninguna.",
+      "profundizar": "Es el tipo de flujo más simple y el que ya usamos en todos los ejercicios del módulo anterior (como el del área del rectángulo): leer datos, calcular, escribir el resultado — cada paso ocurre exactamente una vez, en el orden en que está escrito."
+    },
+    {
+      "id": "flujos-alternativos",
+      "titulo": "Flujos Alternativos",
+      "esencial": "Se presenta cuando el algoritmo no continúa con la siguiente instrucción, sino que salta a otra línea de manera condicional u obligatoria.",
+      "profundizar": "Este tipo de salto se implementaba históricamente con la sentencia GOTO, que ya no se usa en los lenguajes modernos porque hace el código difícil de seguir (el famoso problema del \"código espagueti\"). Hoy, ese mismo comportamiento se logra de forma ordenada con las estructuras condicionales y repetitivas que vas a aprender en este módulo — cumplen el mismo propósito sin perder la claridad del programa."
+    },
+    {
+      "id": "flujos-selectivos",
+      "titulo": "Flujos Selectivos o Condicionales",
+      "grafico": "flujo-selectivo.svg",
+      "esencial": "Permiten ejecutar un bloque de código u otro, dependiendo del valor de verdad que arroje la evaluación de una condición.",
+      "profundizar": "Toda estructura selectiva se apoya en una condición que solo puede ser verdadera o falsa — nunca ambas ni ninguna. Por eso los operadores relacionales y lógicos (que veremos a continuación) son la base indispensable para escribir condicionales."
+    },
+    {
+      "id": "flujos-repetitivos",
+      "titulo": "Flujos Repetitivos",
+      "grafico": "flujo-repetitivo.svg",
+      "esencial": "Son estructuras que ejecutan el mismo bloque de instrucciones de forma repetitiva, mientras se cumpla una condición. También se les llama ciclos o bucles.",
+      "profundizar": "Un error muy común al empezar es olvidar actualizar la condición dentro del ciclo, lo que produce un bucle infinito que nunca termina — recuerda que un algoritmo debe ser finito. Siempre verifica que, en algún momento, la condición del ciclo pueda volverse falsa."
+    },
+    {
+      "id": "operadores-logicos",
+      "titulo": "Operadores Lógicos",
+      "esencial": "Negación (~): invierte el valor de verdad — si p es Verdadero, ~p es Falso. Conjunción (y / AND): el resultado es verdadero solo si ambas condiciones son verdaderas. Disyunción (o / OR): el resultado es verdadero si al menos una condición es verdadera.",
+      "profundizar": "Estos operadores permiten combinar varias condiciones en una sola. Por ejemplo, \"edad >= 18 y tiene_cedula\" solo es verdadero si se cumplen ambas condiciones a la vez; \"es_sabado o es_domingo\" es verdadero si se cumple cualquiera de las dos. Son la base para condiciones más complejas que las que veremos en los primeros ejemplos de este módulo."
+    },
+    {
+      "id": "operadores-relacionales",
+      "titulo": "Operadores Relacionales",
+      "esencial": "Al igual que los lógicos, los operadores relacionales o de comparación arrojan un valor lógico (Falso o Verdadero): igual ( = ), diferente ( <> ), mayor que ( > ), mayor o igual ( >= ), menor que ( < ), menor o igual ( <= ).",
+      "profundizar": "Estos son los operadores que vas a usar dentro de la condición de casi cualquier estructura selectiva o repetitiva — por ejemplo, en \"si (edad >= 18) entonces\", el operador >= es el que hace la comparación. Ten cuidado de no confundir el operador de comparación (=) con el de asignación (←), que vimos en el módulo anterior — cumplen funciones completamente distintas."
+    },
+    {
+      "id": "condicional-simple",
+      "titulo": "Condicional Simple (Si - Entonces)",
+      "esencial": "Ejecuta un bloque de acciones solo cuando se cumple una condición determinada. Si la condición no se cumple, no se hace nada.",
+      "codigo": "si (condicion) entonces\n    <bloque de acciones>\nfin-si",
+      "profundizar": "Nota que no existe una alternativa dentro de esta estructura: si la condición es falsa, el programa simplemente continúa con lo que sigue después de fin-si, sin ejecutar nada del bloque. Para cuando necesitas una alternativa explícita (\"si no se cumple, haz esto otro\"), usamos el condicional doble, que veremos a continuación."
+    },
+    {
+      "id": "ejemplo-valor-absoluto",
+      "titulo": "Ejemplo: Valor Absoluto",
+      "esencial": "Un programa que lee un número real y, si es negativo, lo convierte en positivo antes de mostrarlo.",
+      "codigo": "programa ValorAbsoluto\nreal x\ninicio\n  lea x\n  si (x < 0) entonces\n    x ← x * (-1)\n  fin si\n  escriba x\nfin",
+      "profundizar": "Este es el ejemplo más simple de condicional simple con una acción real: si la condición (x < 0) se cumple, cambia el signo del número; si no se cumple, x se muestra tal como se leyó. Inténtalo tú mismo con distintos valores de entrada (uno positivo y uno negativo) para confirmar que el resultado siempre es positivo."
+    },
+    {
+      "id": "condicional-doble",
+      "titulo": "Condicional Doble (Si - Entonces - Sino)",
+      "esencial": "Ejecuta un bloque de instrucciones si se cumple una condición, y ejecuta otro bloque distinto en el caso contrario.",
+      "codigo": "Si (Condición) Entonces\n    <Bloque de instrucciones 1>\nSino\n    <Bloque de instrucciones 2>\nFin-Si",
+      "profundizar": "A diferencia del condicional simple, aquí siempre se ejecuta alguno de los dos bloques — nunca ninguno y nunca ambos. Es la estructura que necesitas cuando el problema tiene exactamente dos caminos posibles, como en el ejemplo del mayor de dos números que sigue."
+    },
+    {
+      "id": "ejemplo-mayor-dos-numeros",
+      "titulo": "Ejemplo: El Mayor de Dos Números",
+      "esencial": "Un programa que lee dos números enteros y muestra cuál de los dos es mayor.",
+      "codigo": "entero a, b\ninicio\n    escriba \"Digite un número entero: \"\n    lea a\n    escriba \"Digite otro número entero: \"\n    lea b\n    si (a > b) entonces\n        escriba \"El mayor es: \",a\n    sino\n        escriba \"El mayor es: \",b\n    fin si\nfin",
+      "profundizar": "Reto: ¿puedes resolver este mismo problema usando una sola instrucción escriba, en vez de repetirla dentro de cada rama del condicional? Pista: puedes usar una variable auxiliar para guardar el mayor antes de la condición, y escribirla una sola vez al final."
+    },
+    {
+      "id": "condicional-multiple",
+      "titulo": "Condicional Múltiple",
+      "esencial": "Estructura de control empleada cuando existen más de dos posibilidades para una expresión dada, normalmente un valor numérico.",
+      "codigo": "Caso de <Expresión> Hacer\n  e1: <bloque 1>\n  e2: <bloque 2>\n  ......\n  en: <bloque n>\n  sino: <bloque n+1>\nFin Case",
+      "profundizar": "Podrías resolver el mismo problema encadenando varios condicionales dobles (si... sino si... sino si...), pero cuando hay muchas opciones posibles para una misma variable, el condicional múltiple es mucho más claro de leer. Es la estructura ideal para casos como \"según el día de la semana\" o \"según el código de una opción de menú\"."
+    },
+    {
+      "id": "ejemplo-dia-semana",
+      "titulo": "Ejemplo: Establecer el Día de la Semana",
+      "esencial": "Un programa que recibe un número entre 1 y 7, y muestra el nombre del día de la semana correspondiente.",
+      "codigo": "entero dia\ninicio\n  escriba \"Digite el número del día\"\n  lea dia\n  caso dia haga\n    1: escriba \"Lunes\"\n    2: escriba \"Martes\"\n    3: escriba \"Miércoles\"\n    4: escriba \"Jueves\"\n    5: escriba \"Viernes\"\n    6: escriba \"Sábado\"\n    7: escriba \"Domingo\"\n  fin caso\nfin",
+      "profundizar": "Ejercicio opcional: este programa repite la función escriba siete veces. ¿Puedes crear una versión que use una variable auxiliar (por ejemplo, un arreglo o cadena con los nombres de los días) para evitar esa repetición? No es obligatorio para este módulo, pero es un buen ejercicio de optimización una vez domines el condicional múltiple."
+    },
+    {
+      "id": "practica-no-2",
+      "titulo": "Práctica No. 2",
+      "esencial": "Establece algoritmos e implementa soluciones que resuelvan los siguientes problemas:<br>1. Dado un número entero, determinar si es par o impar.<br>2. Dadas la cantidad y precio unitario de un producto, determinar el valor final de una venta, sabiendo que si la factura suma más de $500.000 se debe aplicar un IVA del 16%.<br>3. Dados dos números, establecer cuál es el mayor.<br>4. Determinar el cociente de una división, teniendo en cuenta que el denominador no puede ser cero — en ese caso, debe aparecer el mensaje \"Cociente indeterminado\".<br>5. Dados tres números, establecer la suma y el menor de los tres.<br>6. Establecer el salario semanal de un empleado, teniendo en cuenta que si labora más de 48 horas, cada hora adicional tiene un incremento del 25%.",
+      "profundizar": null
+    }
+  ],
+  "ejercicio": null,
+  "quiz": null
+}
