@@ -210,8 +210,7 @@ function crearDiapositivaCierre(datos) {
   div.className = 'diapositiva diapositiva-cierre';
   div.innerHTML = `
     <h2>Fin del módulo</h2>
-    <p class="introduccion">Continúa cuando estés listo.</p>
-    <nav class="navegacion-modulos">${anterior}${siguiente}</nav>
+    <nav class="navegacion-modulos">${anterior}<img class="logo-cierre" src="../../assets/img/logoUV_transparente.png" alt="Universidad del Valle">${siguiente}</nav>
   `;
   return div;
 }

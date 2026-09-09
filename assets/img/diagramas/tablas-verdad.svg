@@ -1,0 +1,69 @@
+<svg viewBox="0 0 650 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Tablas de verdad de la negación, la conjunción y la disyunción">
+  <g font-family="sans-serif" text-anchor="middle">
+    <text x="90" y="25" font-weight="700" font-size="16" fill="#1A1A1A">Negación</text>
+    <g font-size="18" font-weight="700">
+      <rect x="30" y="35" width="60" height="40" fill="#E40613"/>
+      <text x="60" y="61" fill="#fff">p</text>
+      <rect x="90" y="35" width="60" height="40" fill="#E40613"/>
+      <text x="120" y="61" fill="#fff">~p</text>
+
+      <rect x="30" y="75" width="60" height="40" fill="#F7F5F4" stroke="#E0DDDC"/>
+      <text x="60" y="101" fill="#1A1A1A">V</text>
+      <rect x="90" y="75" width="60" height="40" fill="#F7F5F4" stroke="#E0DDDC"/>
+      <text x="120" y="101" fill="#1A1A1A">F</text>
+
+      <rect x="30" y="115" width="60" height="40" fill="#fff" stroke="#E0DDDC"/>
+      <text x="60" y="141" fill="#1A1A1A">F</text>
+      <rect x="90" y="115" width="60" height="40" fill="#fff" stroke="#E0DDDC"/>
+      <text x="120" y="141" fill="#1A1A1A">V</text>
+    </g>
+
+    <text x="420" y="25" font-weight="700" font-size="16" fill="#1A1A1A">Conjunción (y) y Disyunción (o)</text>
+    <g font-size="17" font-weight="700">
+      <rect x="230" y="35" width="55" height="40" fill="#E40613"/>
+      <text x="257" y="61" fill="#fff">p</text>
+      <rect x="285" y="35" width="55" height="40" fill="#E40613"/>
+      <text x="312" y="61" fill="#fff">q</text>
+      <rect x="340" y="35" width="110" height="40" fill="#E40613"/>
+      <text x="395" y="61" fill="#fff">y (AND)</text>
+      <rect x="450" y="35" width="110" height="40" fill="#E40613"/>
+      <text x="505" y="61" fill="#fff">o (OR)</text>
+
+      <rect x="230" y="75" width="55" height="40" fill="#F7F5F4" stroke="#E0DDDC"/>
+      <text x="257" y="101" fill="#1A1A1A">V</text>
+      <rect x="285" y="75" width="55" height="40" fill="#F7F5F4" stroke="#E0DDDC"/>
+      <text x="312" y="101" fill="#1A1A1A">V</text>
+      <rect x="340" y="75" width="110" height="40" fill="#F7F5F4" stroke="#E0DDDC"/>
+      <text x="395" y="101" fill="#1A1A1A">V</text>
+      <rect x="450" y="75" width="110" height="40" fill="#F7F5F4" stroke="#E0DDDC"/>
+      <text x="505" y="101" fill="#1A1A1A">V</text>
+
+      <rect x="230" y="115" width="55" height="40" fill="#fff" stroke="#E0DDDC"/>
+      <text x="257" y="141" fill="#1A1A1A">V</text>
+      <rect x="285" y="115" width="55" height="40" fill="#fff" stroke="#E0DDDC"/>
+      <text x="312" y="141" fill="#1A1A1A">F</text>
+      <rect x="340" y="115" width="110" height="40" fill="#fff" stroke="#E0DDDC"/>
+      <text x="395" y="141" fill="#1A1A1A">F</text>
+      <rect x="450" y="115" width="110" height="40" fill="#fff" stroke="#E0DDDC"/>
+      <text x="505" y="141" fill="#1A1A1A">V</text>
+
+      <rect x="230" y="155" width="55" height="40" fill="#F7F5F4" stroke="#E0DDDC"/>
+      <text x="257" y="181" fill="#1A1A1A">F</text>
+      <rect x="285" y="155" width="55" height="40" fill="#F7F5F4" stroke="#E0DDDC"/>
+      <text x="312" y="181" fill="#1A1A1A">V</text>
+      <rect x="340" y="155" width="110" height="40" fill="#F7F5F4" stroke="#E0DDDC"/>
+      <text x="395" y="181" fill="#1A1A1A">F</text>
+      <rect x="450" y="155" width="110" height="40" fill="#F7F5F4" stroke="#E0DDDC"/>
+      <text x="505" y="181" fill="#1A1A1A">V</text>
+
+      <rect x="230" y="195" width="55" height="40" fill="#fff" stroke="#E0DDDC"/>
+      <text x="257" y="221" fill="#1A1A1A">F</text>
+      <rect x="285" y="195" width="55" height="40" fill="#fff" stroke="#E0DDDC"/>
+      <text x="312" y="221" fill="#1A1A1A">F</text>
+      <rect x="340" y="195" width="110" height="40" fill="#fff" stroke="#E0DDDC"/>
+      <text x="395" y="221" fill="#1A1A1A">F</text>
+      <rect x="450" y="195" width="110" height="40" fill="#fff" stroke="#E0DDDC"/>
+      <text x="505" y="221" fill="#1A1A1A">F</text>
+    </g>
+  </g>
+</svg>

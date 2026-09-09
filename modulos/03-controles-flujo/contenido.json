@@ -41,6 +41,7 @@
     {
       "id": "operadores-logicos",
       "titulo": "Operadores Lógicos",
+      "grafico": "tablas-verdad.svg",
       "esencial": "Negación (~): invierte el valor de verdad — si p es Verdadero, ~p es Falso. Conjunción (y / AND): el resultado es verdadero solo si ambas condiciones son verdaderas. Disyunción (o / OR): el resultado es verdadero si al menos una condición es verdadera.",
       "profundizar": "Estos operadores permiten combinar varias condiciones en una sola. Por ejemplo, \"edad >= 18 y tiene_cedula\" solo es verdadero si se cumplen ambas condiciones a la vez; \"es_sabado o es_domingo\" es verdadero si se cumple cualquiera de las dos. Son la base para condiciones más complejas que las que veremos en los primeros ejemplos de este módulo."
     },
@@ -96,6 +97,45 @@
       "id": "practica-no-2",
       "titulo": "Práctica No. 2",
       "esencial": "Establece algoritmos e implementa soluciones que resuelvan los siguientes problemas:<br>1. Dado un número entero, determinar si es par o impar.<br>2. Dadas la cantidad y precio unitario de un producto, determinar el valor final de una venta, sabiendo que si la factura suma más de $500.000 se debe aplicar un IVA del 16%.<br>3. Dados dos números, establecer cuál es el mayor.<br>4. Determinar el cociente de una división, teniendo en cuenta que el denominador no puede ser cero — en ese caso, debe aparecer el mensaje \"Cociente indeterminado\".<br>5. Dados tres números, establecer la suma y el menor de los tres.<br>6. Establecer el salario semanal de un empleado, teniendo en cuenta que si labora más de 48 horas, cada hora adicional tiene un incremento del 25%.",
+      "profundizar": null
+    },
+    {
+      "id": "ciclos-introduccion",
+      "titulo": "Estructuras Repetitivas",
+      "esencial": "Las computadoras están especialmente hechas para realizar instrucciones repetitivas a grandes velocidades. Estas estructuras ejecutan un conjunto de instrucciones un número determinado de veces y se denominan bucles o ciclos; a cada repetición del bloque de instrucciones se le llama iteración.",
+      "profundizar": "Con esto cerramos el bloque de algoritmia: ya sabes secuenciar instrucciones, tomar decisiones con condicionales, y ahora vas a aprender a repetir bloques de código sin tener que escribirlos una y otra vez a mano — la última pieza que te falta para escribir algoritmos realmente útiles."
+    },
+    {
+      "id": "ejemplo-repetir-codigo",
+      "titulo": "El Problema de Repetir Código a Mano",
+      "esencial": "Sin una estructura repetitiva, sumar tres números leídos por el usuario obliga a escribir el mismo bloque de instrucciones una y otra vez.",
+      "codigo": "algoritmo suma\nvar entero: SUMA, NUMERO\ninicio\n  SUMA ← 0\n  Leer(NUMERO)\n  SUMA ← SUMA + NUMERO\n  Leer(NUMERO)\n  SUMA ← SUMA + NUMERO\n  Leer(NUMERO)\n  SUMA ← SUMA + NUMERO\nfin",
+      "profundizar": "Imagina que en vez de 3 números necesitaras sumar 100, o una cantidad que no sabes de antemano — este enfoque se vuelve inviable. Este es exactamente el problema que resuelven las estructuras Mientras y Para que ves a continuación: el mismo resultado, sin repetir código."
+    },
+    {
+      "id": "estructura-mientras",
+      "titulo": "Estructura Mientras (While)",
+      "esencial": "La estructura repetitiva Mientras es aquella en que el cuerpo del bucle se ejecuta mientras se cumpla una condición.",
+      "codigo": "/* SumaConMientras */\nentero contador, suma, numero\ninicio\n suma <- 0\n contador <- 1\n mientras (contador <= 3) Haga\n    lea numero\n    suma <- suma + numero\n    contador <- contador + 1\n  fin Mientras\n  escriba suma\nfin",
+      "profundizar": "Fíjate que aquí SÍ hay una variable contador que se actualiza dentro del ciclo (contador <- contador + 1) — es justamente lo que evita el bucle infinito del que hablamos antes. Mientras es la estructura ideal cuando no sabes de antemano cuántas veces se va a repetir el ciclo, solo sabes bajo qué condición debe seguir repitiéndose."
+    },
+    {
+      "id": "estructura-para",
+      "titulo": "Estructura Para (For)",
+      "esencial": "Estructura utilizada cuando de antemano se conoce el número de repeticiones.",
+      "codigo": "SumaConPara\nentero I, suma, numero\ninicio\n suma <- 0\n Para I <- 1 Hasta 3 Haga\n  lea numero\n  suma <- suma + numero\n Fin Para\n escriba suma\nfin",
+      "profundizar": "Compara este código con el de Mientras: hacen exactamente lo mismo, pero Para es más corto porque no necesitas declarar ni actualizar manualmente el contador — la estructura ya se encarga de eso. Usa Para cuando el número de repeticiones es un dato conocido (como \"3 números\" o \"10 veces\"); usa Mientras cuando depende de una condición que solo se conoce en tiempo de ejecución."
+    },
+    {
+      "id": "ejemplos-ciclos",
+      "titulo": "Ejemplos: Practica con Ciclos",
+      "esencial": "Desarrolla e implementa algoritmos para resolver los siguientes problemas:<br>1. Leer 4 notas de un estudiante y calcular su nota final por promedio.<br>2. Calcular el factorial de un número.<br>3. Imprimir los 10 primeros múltiplos de 7.<br>4. Leer una cantidad indeterminada de números y establecer cuántos son positivos y cuántos negativos.",
+      "profundizar": "El problema 4 es un buen momento para pensar en Mientras en vez de Para — como no sabes de antemano cuántos números va a ingresar el usuario, necesitas una condición de parada (por ejemplo, que el usuario escriba un valor centinela como -1 para indicar que terminó)."
+    },
+    {
+      "id": "taller-grupal-ciclos",
+      "titulo": "Taller Grupal",
+      "esencial": "Desarrolla e implementa algoritmos para resolver los siguientes problemas:<br>1. Determine el triple de un número digitado por teclado.<br>2. Dados los catetos de un triángulo rectángulo, determine su hipotenusa.<br>3. Establezca el salario semanal de un empleado, teniendo en cuenta que si labora más de 48 horas, cada hora adicional tiene un incremento del 25%.<br>4. Dada la medida sexagesimal de un ángulo, determine si es recto, agudo u obtuso.<br>5. Determine la media de una lista indefinida de números positivos, terminada por uno negativo.<br>6. Establezca la suma de los números pares y de los números impares comprendidos entre 1 y 100.",
       "profundizar": null
     }
   ],

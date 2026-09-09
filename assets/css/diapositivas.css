@@ -41,6 +41,8 @@ body {
 .header-institucional img.logo {
   height: 40px;
   padding: 1px 3px;
+  background: transparent;
+  border-radius: 0;
 }
 
 .header-institucional .nombre-curso {
@@ -144,6 +146,24 @@ body {
   text-align: center;
 }
 
+.diapositiva-cierre .navegacion-modulos a {
+  background: var(--color-rojo);
+  color: #fff;
+  text-decoration: none;
+  padding: 0.65rem 1.4rem;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+}
+
+.diapositiva-cierre .navegacion-modulos a:hover {
+  background: var(--color-rojo-oscuro);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
 .diapositiva-cierre .navegacion-modulos {
   border-top: none;
   margin-top: 2rem;
@@ -151,6 +171,12 @@ body {
   max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
+  align-items: center;
+}
+
+.diapositiva-cierre .logo-cierre {
+  max-height: 150px;
+  width: auto;
 }
 
 /* ---------- Barra de navegación de diapositivas ---------- */
@@ -208,20 +234,30 @@ body {
   background: var(--color-rojo);
   color: #fff;
   border: none;
-  border-radius: 4px;
-  padding: 0.5rem 1.1rem;
-  font-weight: 600;
-  font-size: 0.95rem;
+  border-radius: 6px;
+  padding: 0.65rem 1.4rem;
+  font-weight: 700;
+  font-size: 1.05rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
 }
 
 .boton-nav:hover:not(:disabled) {
   background: var(--color-rojo-oscuro);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.boton-nav:active:not(:disabled) {
+  transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.25);
 }
 
 .boton-nav:disabled {
   background: var(--color-borde);
   color: #888;
   cursor: not-allowed;
+  box-shadow: none;
 }
 
 .contador-diapositivas {
