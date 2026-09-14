@@ -110,17 +110,23 @@ body {
 }
 
 .hero-contenido .institucion {
-  margin-top: 1rem;
+  margin: 0;
   font-size: 0.9rem;
   color: #D9B9BA;
   letter-spacing: 0.02em;
 }
 
+.fila-institucion {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
 .enlace-herramientas {
-  position: absolute;
-  top: 1.5rem;
-  right: 1.75rem;
-  z-index: 2;
+  flex: 0 0 auto;
   color: #fff;
   text-decoration: none;
   font-weight: 600;
@@ -162,7 +168,7 @@ body {
   background: #fff;
   border: 1px solid var(--color-borde);
   border-radius: 10px;
-  padding: 1.25rem;
+  padding: 1rem 1.25rem;
   transition: border-color 0.15s ease, transform 0.15s ease;
 }
 
@@ -176,7 +182,7 @@ body {
   background: transparent;
   border: 1px dashed var(--color-borde);
   border-radius: 10px;
-  padding: 1.25rem;
+  padding: 1rem 1.25rem;
   color: #888;
 }
 
@@ -199,7 +205,10 @@ body {
 }
 
 .tarjeta-modulo .numero-modulo {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
   background: var(--color-rojo);
   color: #fff;
   font-family: var(--fuente-titulos);
@@ -207,16 +216,20 @@ body {
   font-size: 0.85rem;
   width: 28px;
   height: 28px;
-  line-height: 28px;
-  text-align: center;
   border-radius: 50%;
-  margin-bottom: 0.75rem;
+}
+
+.tarjeta-modulo .fila-titulo {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 0.4rem;
 }
 
 .tarjeta-modulo h3 {
   font-family: var(--fuente-titulos);
-  font-size: 1.2rem;
-  margin: 0 0 0.5rem 0;
+  font-size: 1.1rem;
+  margin: 0;
   color: var(--color-texto);
 }
 
@@ -234,10 +247,11 @@ body {
     width: 80vw;
   }
   .enlace-herramientas {
-    top: 1rem;
-    right: 1rem;
     font-size: 0.85rem;
     padding: 0.3rem 0.8rem;
+  }
+  .fila-institucion {
+    justify-content: center;
   }
   .hero-contenido {
     flex-direction: column;
